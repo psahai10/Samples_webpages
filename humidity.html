@@ -43,30 +43,30 @@
                         </ul>
                     </div>
                 </nav>
-  <div class="page-header">
-        <div class="container">
-            <div class="row-fluid">
-                <br></br>
-                <!-- <h1>Header Page</h1> -->
-        <h1 class="text-success">Summary: Latitude vs. X</h1>
-        <hr class="style1">
-            <!-- <div class="pb-2 mt-4 mb-2 border-bottom"></div> -->
-        </div>
-    </div>
-</div>
-
-  
+                <div class="page-header">
+                        <div class="container">
+                            <div class="row-fluid">
+                                <br></br>
+                                <!-- <h1>Header Page</h1> -->
+                        <h1 class="text-success">vs. Humidity (%): </h1>
+                        <hr class="style1">
+                            <!-- <div class="pb-2 mt-4 mb-2 border-bottom"></div> -->
+                        </div>
+                    </div>
+                </div>
+                
 <div class="container">
       <div class="row">
-          <div class="col-md-5">
+          <div class="col-md-6">
             <div class="thumbnail">
-              <img src="Max_Temperature.png" alt="..." class="img-thumbnail">
+              <img src="Humidity.png" alt="..." class="img-thumbnail">
+            </div>
+            <div class="caption">
             </div>
         </div>
-              <div class="col-md-7">
-                <p>In this website we analyzed 500 random cities across the world using Python and several mod’s including citypy. We first started by generating a random list of latitudes and longitudes, and generating a list out of the two. Next, we used these coordinates together with the mod citypy, that allowed us to identify the nearest city for each coordinate pair. We populated these random cities into a list, making sure that we didn't include any city twice. We next proceeded to do an API query with openweathermap.org. This API allows us to obtain distinct weather parameters for any city across the globe.  </p>
-                <p> First we obtained the exact latitudes and longitudes for each city, the max temperature in Fahrenheit for that particular day, the percent (%) humidity, and the wind speed in miles per hour (mph), and generated individual lists for each condition. Next, we combined these lists into a dataframe using pandas. Once we had the dataframe we proceeded to generate dot plot figures for each condition against the latitudes for each city. This revealed several interesting trends. For more information on each weather condition queried and their trends across latitudes, please explore further this website. Thanks for looking. </p>
-                </div>
+              <div class="col-md-4">
+                <p>In this graph, we analyzed the relationship between humidity and latitude. At least at the snapshot where these measurements were taken, there seems to be no clear relationship between latitude and overall percent humidity. However, it seems that most cities (~80%), independent of latitude, experience humidity between 40% to 100% and ~98% of cities have humidity between 20% and 100%. These data suggest that humidity seems to associate more with the local landscape of a particular city (ie. forest vs. desert), rather than the latitudes of each city. However, it would be interesting to plot this information by month and in addition by year, to observe any trends that might appear.</p>
+            </div>
           </div>
 
           

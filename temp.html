@@ -48,7 +48,7 @@
             <div class="row-fluid">
                 <br></br>
                 <!-- <h1>Header Page</h1> -->
-        <h1 class="text-success">Summary: Latitude vs. X</h1>
+        <h1 class="text-success">vs. Temperature (F)</h1>
         <hr class="style1">
             <!-- <div class="pb-2 mt-4 mb-2 border-bottom"></div> -->
         </div>
@@ -58,15 +58,14 @@
   
 <div class="container">
       <div class="row">
-          <div class="col-md-5">
+          <div class="col-md-6">
             <div class="thumbnail">
               <img src="Max_Temperature.png" alt="..." class="img-thumbnail">
             </div>
         </div>
-              <div class="col-md-7">
-                <p>In this website we analyzed 500 random cities across the world using Python and several mod’s including citypy. We first started by generating a random list of latitudes and longitudes, and generating a list out of the two. Next, we used these coordinates together with the mod citypy, that allowed us to identify the nearest city for each coordinate pair. We populated these random cities into a list, making sure that we didn't include any city twice. We next proceeded to do an API query with openweathermap.org. This API allows us to obtain distinct weather parameters for any city across the globe.  </p>
-                <p> First we obtained the exact latitudes and longitudes for each city, the max temperature in Fahrenheit for that particular day, the percent (%) humidity, and the wind speed in miles per hour (mph), and generated individual lists for each condition. Next, we combined these lists into a dataframe using pandas. Once we had the dataframe we proceeded to generate dot plot figures for each condition against the latitudes for each city. This revealed several interesting trends. For more information on each weather condition queried and their trends across latitudes, please explore further this website. Thanks for looking. </p>
-                </div>
+              <div class="col-md-4">
+                <p>In this analysis, we plotted the relationship between temperature (on y axis) and lattitude (on x axis). Not surprisingly, there is a clear relationship between the two. The closer you are to lattitute zero (equator), the warmer the temperature gets. In addition, the cities with coordinates on the (+) latitude (Northern Hemisphere), the temperature starts getting colder (lower temperature), since the date where these measurements were taken was in early March, is transitioning from winter to spring. By contrast cities with (-) lattitude coordinates (Southern Hemisphere) is fall and is transitioning from summer to winter time. Lastly, the closer the cities are to the equator, the warmer the temperature gets, in agreement with the known tropical weather of these cities. </p>
+            </div>
           </div>
 
           

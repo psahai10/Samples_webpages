@@ -43,31 +43,32 @@
                         </ul>
                     </div>
                 </nav>
-  <div class="page-header">
-        <div class="container">
-            <div class="row-fluid">
-                <br></br>
-                <!-- <h1>Header Page</h1> -->
-        <h1 class="text-success">Summary: Latitude vs. X</h1>
-        <hr class="style1">
-            <!-- <div class="pb-2 mt-4 mb-2 border-bottom"></div> -->
-        </div>
-    </div>
-</div>
 
-  
+                <div class="page-header">
+                        <div class="container">
+                            <div class="row-fluid">
+                                <br></br>
+                                <!-- <h1>Header Page</h1> -->
+                        <h1 class="text-success">vs. Wind Speed (mph): </h1>
+                        <hr class="style1">
+                            <!-- <div class="pb-2 mt-4 mb-2 border-bottom"></div> -->
+                        </div>
+                    </div>
+                </div>
 <div class="container">
       <div class="row">
-          <div class="col-md-5">
+          <div class="col-md-6">
             <div class="thumbnail">
-              <img src="Max_Temperature.png" alt="..." class="img-thumbnail">
+              <img src="Wind.png" alt="..." class="img-thumbnail">
+            </div>
+            <div class="caption">
             </div>
         </div>
-              <div class="col-md-7">
-                <p>In this website we analyzed 500 random cities across the world using Python and several mod’s including citypy. We first started by generating a random list of latitudes and longitudes, and generating a list out of the two. Next, we used these coordinates together with the mod citypy, that allowed us to identify the nearest city for each coordinate pair. We populated these random cities into a list, making sure that we didn't include any city twice. We next proceeded to do an API query with openweathermap.org. This API allows us to obtain distinct weather parameters for any city across the globe.  </p>
-                <p> First we obtained the exact latitudes and longitudes for each city, the max temperature in Fahrenheit for that particular day, the percent (%) humidity, and the wind speed in miles per hour (mph), and generated individual lists for each condition. Next, we combined these lists into a dataframe using pandas. Once we had the dataframe we proceeded to generate dot plot figures for each condition against the latitudes for each city. This revealed several interesting trends. For more information on each weather condition queried and their trends across latitudes, please explore further this website. Thanks for looking. </p>
-                </div>
-          </div>
+            <div class="col-md-4">
+                <br></br>
+             <p>In this graph, we analyzed the relationship between latitude and wind speed in miles per hour (mph). In general, it seems there is no correlation by latitude and wind speed. However, by looking at the data carefully, general trends seems to appear. First of all, there appears to be a peak in wind speed in cities with latitudes close to  (+)~60 and (-)~60. This data appears to be in agreement which what we know about how earth rotation affects wind speed by generating the easterlies and westerlies, for example.</p>
+        </div>
+        </div>
 
           
 </body>
