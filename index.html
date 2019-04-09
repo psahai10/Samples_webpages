@@ -59,15 +59,18 @@
 <div class="container">
       <div class="row">
           <div class="col-md-5">
-            <div class="thumbnail">
-              <img src="Max_Temperature.png" alt="..." class="img-thumbnail">
+            <div class="image-wrapper float-left pr-3">
+              <img src="Max_Temperature.png" alt="...">
             </div>
-        </div>
+            <div class="single-post-content-wrapper p-3"> 
               <div class="col-md-7">
                 <p>In this website we analyzed 500 random cities across the world using Python and several mod’s including citypy. We first started by generating a random list of latitudes and longitudes, and generating a list out of the two. Next, we used these coordinates together with the mod citypy, that allowed us to identify the nearest city for each coordinate pair. We populated these random cities into a list, making sure that we didn't include any city twice. We next proceeded to do an API query with openweathermap.org. This API allows us to obtain distinct weather parameters for any city across the globe.  </p>
+                <br><br>
                 <p> First we obtained the exact latitudes and longitudes for each city, the max temperature in Fahrenheit for that particular day, the percent (%) humidity, and the wind speed in miles per hour (mph), and generated individual lists for each condition. Next, we combined these lists into a dataframe using pandas. Once we had the dataframe we proceeded to generate dot plot figures for each condition against the latitudes for each city. This revealed several interesting trends. For more information on each weather condition queried and their trends across latitudes, please explore further this website. Thanks for looking. </p>
                 </div>
           </div>
+        </div>
+    </div>
 
           
 </body>
